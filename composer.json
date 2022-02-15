@@ -12,7 +12,8 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "stripe/stripe-php": "^7.113"
     },
     "autoload": {
         "files": [ "flight/autoload.php", "flight/Flight.php" ]
