@@ -18,13 +18,13 @@ Flight::route('POST /paywithstrip', function(){
         'pk_test_51IWQUwH8oljXErmdg6L4MhsuB6tDdmumlHFfyNaopty2U27pmRcqMX1c868zn838lGQtU1eYV6bKRSQtMFWf36VT00aNsvnTOE'
       );
      $response =  $stripe->charges->create([
-        'amount' => 2000,
+        'amount' => $_POST['amount'],
         'currency' => 'usd',
         'source' => 'tok_mastercard',
         'description' => 'Pay for order',
       ]);
 
-      $result = json_decode($response, true);
+
 
 });
 
