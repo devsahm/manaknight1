@@ -29,7 +29,7 @@
 
                 
             </div>
-            <div class="details col-md-6">
+            <div class="details col-md-6" style="padding: 10;">
                 <h3 class="product-title"><?php echo $order['title'] ;?></h3>
                
                 </div>
